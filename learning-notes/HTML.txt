@@ -38,11 +38,10 @@ Chapter 2: Head Element
     <link rel="icon" href="../resources/home.png" type="image/x-icon">
     - link element, rel attribute (for reference), href for what you want inside, type for itself.
     - flaticon.com has a lot of free icons as long as you put proper credits
-    Example:
+    Example: (inside the body element)
     <footer>
         Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a>
     </footer>
 > Inside the head element, he moved his previous styling into a proper separate css sheet.
     <link rel="stylesheet" href="main.css">
     - link element, rel attribute (for preset types), href for where your style sheet is located.
-    
