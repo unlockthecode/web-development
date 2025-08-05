@@ -1,5 +1,11 @@
-Learning HTML:
+[ Learning Hypertext Markup Language ]
 
 https://youtu.be/mJgBOIoGihA - HTML Full Course for Beginners | Complete All-in-One Tutorial | 4 Hours
 
-Hypertext Markup Language
+
+Shortcuts:
+tags + tab (quick shortcut, i.e html+tab = <html></html>)
+
+Notes:
+> Inside the head we put the title
+> Code formatter may be useful like Prettier
