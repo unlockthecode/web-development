@@ -6,14 +6,34 @@ https://youtu.be/mJgBOIoGihA - HTML Full Course for Beginners | Complete All-in-
 Shortcuts:
 element + tab (i.e html+tab = <html></html>)
 alt + l + alt + o (opens live server)
+alt + z (text wrap)
 
-Notes:
+Chapter 1:
 > Prettier, vscode-icons, and github theme extensions are optional but looks good
 > Live Server extension will be useful to view your project
     - After installing, right click inside any of your html file and you can open it in your browser immediately and host it locally in your pc
+    - Bottom right you can see a stop icon in a port if you are live OR "Start Live" if it's off.
+> Only put 1 h1 element in a page
+> Inside the head we put the title and meta elements.
+    - In the tutorial he puts some styling (css) under head as well.
 > W3C Markup Validation Service
     - It makes the standards for the web overall, and we can use it to check for any mistakes
     - validator.w3.org
-> Only put 1 h1 element in a page
-> Inside the head we put the title
-    - In the tutorial he puts some styling (css) under head as well
+    - Important to use as reference.
+    - I needed to put lang attribute to the html start tag.
+    - I also needed to put !DOCTYPE html before the actual html element.
+    - Finally, I put <meta charset="UTF-8"> inside the head element.
+> Elements vs Attributes
+    - Attributes are properties of elements
+
+Chapter 2: Head Element
+> Anything inside the Head Element is not seen in a webpage.
+> Attributes of the meta element
+    - charset, name, content
+> To my understanding we break something like 
+
+    <meta name="author" content="UnlockTheCode">
+
+    to 
+
+    name = type, content = inside that type
