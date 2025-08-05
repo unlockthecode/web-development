@@ -27,13 +27,22 @@ Chapter 1:
     - Attributes are properties of elements
 
 Chapter 2: Head Element
-> Anything inside the Head Element is not seen in a webpage.
-> Attributes of the meta element
+> Anything inside the Head Element is not seen in the webpage itself. It is something that's behind the scenes
+
+> Attributes of the meta element so far
     - charset, name, content
 > To my understanding we break something like 
-
-    <meta name="author" content="UnlockTheCode">
-
-    to 
-
+    <meta name="author" content="UnlockTheCode"> 
     name = type, content = inside that type
+> Inside the head element we can put an icon via
+    <link rel="icon" href="../resources/home.png" type="image/x-icon">
+    - link element, rel attribute (for reference), href for what you want inside, type for itself.
+    - flaticon.com has a lot of free icons as long as you put proper credits
+    Example:
+    <footer>
+        Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a>
+    </footer>
+> Inside the head element, he moved his previous styling into a proper separate css sheet.
+    <link rel="stylesheet" href="main.css">
+    - link element, rel attribute (for preset types), href for where your style sheet is located.
+    
