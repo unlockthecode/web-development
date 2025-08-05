@@ -4,8 +4,16 @@ https://youtu.be/mJgBOIoGihA - HTML Full Course for Beginners | Complete All-in-
 
 
 Shortcuts:
-tags + tab (quick shortcut, i.e html+tab = <html></html>)
+element + tab (i.e html+tab = <html></html>)
+alt + l + alt + o (opens live server)
 
 Notes:
+> Prettier, vscode-icons, and github theme extensions are optional but looks good
+> Live Server extension will be useful to view your project
+    - After installing, right click inside any of your html file and you can open it in your browser immediately and host it locally in your pc
+> W3C Markup Validation Service
+    - It makes the standards for the web overall, and we can use it to check for any mistakes
+    - validator.w3.org
+> Only put 1 h1 element in a page
 > Inside the head we put the title
-> Code formatter may be useful like Prettier
+    - In the tutorial he puts some styling (css) under head as well
