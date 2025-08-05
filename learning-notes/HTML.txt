@@ -4,9 +4,10 @@ https://youtu.be/mJgBOIoGihA - HTML Full Course for Beginners | Complete All-in-
 
 
 Shortcuts:
-element + tab (i.e html+tab = <html></html>)
-alt + l + alt + o (opens live server)
-alt + z (text wrap)
+element + tab               (i.e html+tab = <html></html>)
+alt + l + alt + o           (opens live server)
+alt + z                     (text wrap)
+shift + alt + down arrow    (duplicate a line)
 
 Chapter 1:
 > Prettier, vscode-icons, and github theme extensions are optional but looks good
@@ -45,3 +46,11 @@ Chapter 2: Head Element
 > Inside the head element, he moved his previous styling into a proper separate css sheet.
     <link rel="stylesheet" href="main.css">
     - link element, rel attribute (for preset types), href for where your style sheet is located.
+
+Chapter 3: Basics of Text Contents
+> Webpages are alike newspapers with headings and paragraphs of texts
+> Headings have hierarchy, h1 -> h2 -> ... 
+> You can make comments in your code in HTML using:
+    <!-- Comment -->
+> If you can tell from this point, there are spaces between your contents but we can fix it later.
+> Use <hr> (horizontal rule) element to break headings apart and style later.
