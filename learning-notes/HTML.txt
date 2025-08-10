@@ -50,8 +50,6 @@ Chapter 2: Head Element
 Chapter 3: Basics of Text Contents
 > Webpages are alike newspapers with headings and paragraphs of texts
 > Headings have hierarchy, h1 -> h2 -> ... 
-> You can make comments in your code in HTML using:
-    <!-- Comment -->
 > If you can tell from this point, there are spaces between your contents but we can fix it later.
 > Use <hr> (horizontal rule) element to break headings apart and style later.
 > HTML doesn't honor spaces, this is called whitespace collapsing.
@@ -75,6 +73,6 @@ Common inline elements:
     &copy;                  - Copyright Symbol 
     <abbr> - </abbr>        - abbreviation
     <address> - </address>  - Location/place for any webreader to recognize a text is referring to a location.
-    <!-- Comment -->        - Comments in the HTML
+    <!-- Comment -->        - Comments in the HTML/source code
 > Some usage shown:
     <abbr title="Mozilla Developer Network">MDN</abbr>  - puts dots below and if hovered over we see a tooltip with the meaning
