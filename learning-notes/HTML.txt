@@ -54,3 +54,12 @@ Chapter 3: Basics of Text Contents
     <!-- Comment -->
 > If you can tell from this point, there are spaces between your contents but we can fix it later.
 > Use <hr> (horizontal rule) element to break headings apart and style later.
+> HTML doesn't honor spaces, this is called whitespace collapsing.
+    - Something we can do is use a line break "<br>"
+> Block vs Inline level elements 
+    - Block-level elements create a "block" that takes up the full available width and starts on a new line. They stack vertically and can contain other block-level or inline elements.
+    - Inline elements flow within the text content and only take up as much width as necessary. They don't start on new lines.
+> Semantics (Do note that the listed behaviors are their "default" but it can be changed in css.)
+    <em> - </em>            - Makes text italicized but also serves as a marker for web readers to emphasize that text.
+    <strong> - </strong>    - It makes it a little bit bigger, same purpose as above but bigger emphasis.
+    
