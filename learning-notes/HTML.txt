@@ -169,3 +169,10 @@ Problems I tackled:
             padding: 0;
             line-height: 1.4;
         }
+
+> After fixing the separation of each part, I found out that after each end of a part (like verse, chorus), there isn't any space so:
+    I put this in the .css of the page
+    Let's say the <p></p> is inside a <div class="verse">
+    .verse p:last-child {
+        margin-bottom: 1em;
+    }
