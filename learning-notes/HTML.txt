@@ -8,6 +8,7 @@ element + tab               (i.e html+tab = <html></html>)
 alt + l + alt + o           (opens live server)
 alt + z                     (text wrap)
 shift + alt + down arrow    (duplicate a line)
+ctrl + d                    (select multiple lines with the same elements in order)
 
 Chapter 1:
 > Prettier, vscode-icons, and github theme extensions are optional but looks good
@@ -79,4 +80,12 @@ Common inline elements:
 
 
 Chapter 4: List Types
-> ordered list, unordered lists, description lists 
+    <ol> </ol>              - ordered lists
+    <ul> </ul>              - unordered list
+    <li> </li>              - list item (inside the previous two list types)
+    
+    <dl> Something </ul>    - description list header
+    <dd> Detail </dd>    - detail for description list 
+
+Chapter 5: 
+    
