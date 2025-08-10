@@ -59,7 +59,17 @@ Chapter 3: Basics of Text Contents
 > Block vs Inline level elements 
     - Block-level elements create a "block" that takes up the full available width and starts on a new line. They stack vertically and can contain other block-level or inline elements.
     - Inline elements flow within the text content and only take up as much width as necessary. They don't start on new lines.
-> Semantics (Do note that the listed behaviors are their "default" but it can be changed in css.)
+
+Common block-level elements: 
+<div>, <p>, <h1>-<h6>, <ul>, <ol>, <li>, <section>, <article>, <header>, <footer>, <form>, <table>, <blockquote>
+
+Common inline elements:
+<span>, <a>, <strong>, <em>, <img>, <input>, <button>, <code>, <small>, <sub>, <sup>
+
+> Semantics / HTML entities (Do note that the listed behaviors are their "default" but it can be changed in css.)
     <em> - </em>            - Makes text italicized but also serves as a marker for web readers to emphasize that text.
     <strong> - </strong>    - It makes it a little bit bigger, same purpose as above but bigger emphasis.
-    
+    &nbsp;                  - Makes a tab/indent 
+    &lt;                    - "<" symbol
+    &gt;                    - ">" symbol
+    &copy;                  - Copyright Symbol 
