@@ -8,12 +8,13 @@ alt + l + alt + o           (opens live server)
 alt + z                     (text wrap)
 shift + alt + down arrow    (duplicate a line)
 ctrl + d                    (select multiple lines with the same elements in order)
+shift + alt + f             (fix indentations and formatting)
 
 Misc:
 > Your project doesn't always have to have an index.html but Web servers automatically serve index.html when someone visits your domain root or directory without specifying a file.
 
 Chapter 1:
-> Prettier, vscode-icons, and github theme extensions are optional but looks good
+> vscode-icons, and github theme extensions are optional but looks good
 > Live Server extension will be useful to view your project
     - After installing, right click inside any of your html file and you can open it in your browser immediately and host it locally in your pc
     - Bottom right you can see a stop icon in a port if you are live OR "Start Live" if it's off.
@@ -106,10 +107,11 @@ Chapter 5: Links
 
 My Goals For the current Project:
 [In progress]       > Later make separate pages for different songs
-                    > Find a way to make the letters not turn to blue when clicked by someone
+                    > Find a way to make the letters not turn to blue when clicked by someone.
+                    > Find a way to make links open in another tab when clicked by someone.
                     > Find a way to replace &nbsp; stuff for indentations or make it easier.
-                    > Find out how to make css for different pages in one project 
-                    > Find out terms for parts of a webpage (i.e. the top bar where there's usually home/back/etc in a page)
+                    > Find out how to make css for different pages in one project.
+                    > Find out terms for parts of a webpage (i.e. the top bar where there's usually home/back/etc in a page).
 
 Problems I tackled:
 > Find out the proper way to change abbr for romanization of the korean lyrics
