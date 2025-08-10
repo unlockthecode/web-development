@@ -73,8 +73,8 @@ Common inline elements:
     &lt;                    - "<" symbol
     &gt;                    - ">" symbol
     &copy;                  - Copyright Symbol 
-    <abbr>  -</abbr>        - abbreviation
-
+    <abbr> - </abbr>        - abbreviation
+    <address> - </address>  - Location/place for any webreader to recognize a text is referring to a location.
+    <!-- Comment -->        - Comments in the HTML
 > Some usage shown:
     <abbr title="Mozilla Developer Network">MDN</abbr>  - puts dots below and if hovered over we see a tooltip with the meaning
-
