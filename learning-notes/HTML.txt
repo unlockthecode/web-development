@@ -76,3 +76,7 @@ Common inline elements:
     <!-- Comment -->        - Comments in the HTML/source code
 > Some usage shown:
     <abbr title="Mozilla Developer Network">MDN</abbr>  - puts dots below and if hovered over we see a tooltip with the meaning
+
+
+Chapter 4: List Types
+> ordered list, unordered lists, description lists 
