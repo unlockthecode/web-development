@@ -2,13 +2,16 @@
 
 https://youtu.be/mJgBOIoGihA - HTML Full Course for Beginners | Complete All-in-One Tutorial | 4 Hours
 
-
 Shortcuts:
 element + tab               (i.e html+tab = <html></html>)
 alt + l + alt + o           (opens live server)
 alt + z                     (text wrap)
 shift + alt + down arrow    (duplicate a line)
 ctrl + d                    (select multiple lines with the same elements in order)
+
+Misc:
+> Your project doesn't always have to have an index.html but Web servers automatically serve index.html when someone visits your domain root or directory without specifying a file.
+> 
 
 Chapter 1:
 > Prettier, vscode-icons, and github theme extensions are optional but looks good
