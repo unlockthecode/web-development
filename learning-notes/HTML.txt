@@ -96,3 +96,8 @@ Chapter 5: Links
     > If we are linking (site or other file types) from 
         Other servers than your own = Absolute Reference 
         Your own servers            = Relative Reference 
+> How about something like a table of contents in the same webpage?
+    We first define a custom "link" in the current webpage 
+        <h2 id="test">This is the test.</h2>
+    Then if we want to link it later, 
+        <a href="#test">Click to go to test.</a>
