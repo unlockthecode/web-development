@@ -87,5 +87,12 @@ Chapter 4: List Types
     <dl> Something </ul>    - description list header
     <dd> Detail </dd>    - detail for description list 
 
-Chapter 5: 
-    
+Chapter 5: Links
+> We link the web together
+        <link> </link>                  - link tag but not what we use to link page to each other
+        <link rel="" href="">
+        <a href="link">Something</a>    - anchor tag + href link 
+> Absolute Reference vs Relative Reference
+    > If we are linking (site or other file types) from 
+        Other servers than your own = Absolute Reference 
+        Your own servers            = Relative Reference 
