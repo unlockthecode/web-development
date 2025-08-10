@@ -1,9 +1,26 @@
-
-.html{
+html{
     font-size: 22px;
 }
 
-.body{
+body{
     background-color: black;
     color: whitesmoke;
+}
+
+/* make links keep the same color in all states */
+a,
+a:visited,
+a:active,
+a:focus {
+  color: whitesmoke;
+}
+
+.indented {
+    text-indent: 20px;
+}
+
+.indented p{
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
 }
