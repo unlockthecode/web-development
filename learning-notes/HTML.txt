@@ -104,3 +104,15 @@ Chapter 5: Links
     Then if we want to link it later, 
         <a href="#test">Click to go to test.</a>
 
+My Goals For the current Project:
+[In progress]       > Later make separate pages for different songs
+                    > Find a way to make the letters not turn to blue when clicked by someone
+                    > Find a way to replace &nbsp; stuff
+                    > Find out how to make css for different pages in one project 
+                    > Find out terms for parts of a webpage (i.e. the top bar where there's usually home/back/etc in a page)
+
+Problems I tackled:
+> Find out the proper way to change abbr for romanization of the korean lyrics
+    - basically the same but replaced with span so instead of: 
+        <abbr title="endlessly/without end">kkeuteopsi</abbr>, changed it to 
+        <span title="endlessly/without end">kkeuteopsi</span>
