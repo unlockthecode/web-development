@@ -9,6 +9,8 @@ alt + z                     (text wrap)
 shift + alt + down arrow    (duplicate a line)
 ctrl + d                    (select multiple lines with the same elements in order)
 shift + alt + f             (fix indentations and formatting)
+Shift + Alt + I             (this puts a cursor at the end of each highlighted line)
+    - Home                  (after above, press Home to move all cursors to the start of the lines)
 
 Misc:
 > Your project doesn't always have to have an index.html but Web servers automatically serve index.html when someone visits your domain root or directory without specifying a file.
@@ -51,6 +53,23 @@ Chapter 2: Head Element
     <link rel="stylesheet" href="main.css">
     - link element, rel attribute (for preset types), href for where your style sheet is located.
 
+
+Difference of <head>, <header>, <footer>
+
+<head>
+Purpose: Holds metadata about the page (not visible content).
+Location: Always inside <html> but before <body>.
+Contains: <title>, <meta>, <link> (CSS), <style>, <script> (sometimes), etc.
+
+<header>
+Purpose: A sectioning element for content inside the body — usually the top part of the page or a section.
+Location: Inside <body>.
+Contains: Visible things like logo, navigation menu, titles, etc.
+*(unsure but also the <nav> is under this)
+
+<footer>
+Works like <header> but for the bottom section — contact info, copyright, navigation, etc.
+
 Chapter 3: Basics of Text Contents
 > Webpages are alike newspapers with headings and paragraphs of texts
 > Headings have hierarchy, h1 -> h2 -> ... 
@@ -81,6 +100,11 @@ Common inline elements:
 > Some usage shown:
     <abbr title="Mozilla Developer Network">MDN</abbr>  - puts dots below and if hovered over we see a tooltip with the meaning
 
+> Lessons learned:
+    Putting an entire verse in a single <p> with <br> tags is not ideal from a semantic HTML standpoint, even though it works visually.
+    NEVER put alot of text in a single <p> </p> ...
+    IDEALLY put <p> </p> for each line...
+    <br> is meant for occasional line breaks, not structuring an entire block. 
 
 Chapter 4: List Types
     <ol> </ol>              - ordered lists
@@ -106,10 +130,7 @@ Chapter 5: Links
         <a href="#test">Click to go to test.</a>
 
 My Goals For the current Project:
-[In progress]       > Later make separate pages for different songs
-                    > Find a way to make the letters not turn to blue when clicked by someone.
                     > Find a way to make links open in another tab when clicked by someone.
-                    > Find a way to replace &nbsp; stuff for indentations or make it easier.
                     > Find out how to make css for different pages in one project.
                     > Find out terms for parts of a webpage (i.e. the top bar where there's usually home/back/etc in a page).
 
@@ -118,3 +139,33 @@ Problems I tackled:
     - basically the same but replaced with span so instead of: 
         <abbr title="endlessly/without end">kkeuteopsi</abbr>, changed it to 
         <span title="endlessly/without end">kkeuteopsi</span>
+
+> Find a way to make the letters not turn to blue when clicked by someone.
+    - make links keep the same color in all states */
+        a,
+        a:visited,
+        a:active,
+        a:focus {color: whitesmoke;}
+    - I put this in the css of my project
+
+> Find a way to replace &nbsp; stuff for indentations or make it easier.
+    - instead of doing this: 
+            <p>&nbsp;&nbsp;This is indented.</p>
+    - we're going to do:
+            <p class="indented">This is indented.</p>
+        and then in the styling / css page we put 
+            .indented {
+                margin-left: 20px; /* or padding-left: 20px */
+                }
+    - I also learned that I should never put too much text in a <p> </p> element
+    - If a group of text is by parts, ideally we use <div> and we class them together.
+    - Alot of <br> is bad because it is meant for occasional line breaks, not structuring an entire block. 
+
+> After separating the lyrics parts by div for each part and p for each line, how do I fix the spacing between <p> elements?
+    - Go into the .css of the page 
+    - In this case we put the <p> inside a <div> so let's say the <p> elements are inside <div class="test">
+        .test p{
+            margin: 0;
+            padding: 0;
+            line-height: 1.4;
+        }
