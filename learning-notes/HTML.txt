@@ -11,7 +11,6 @@ ctrl + d                    (select multiple lines with the same elements in ord
 
 Misc:
 > Your project doesn't always have to have an index.html but Web servers automatically serve index.html when someone visits your domain root or directory without specifying a file.
-> 
 
 Chapter 1:
 > Prettier, vscode-icons, and github theme extensions are optional but looks good
@@ -104,3 +103,4 @@ Chapter 5: Links
         <h2 id="test">This is the test.</h2> (doesn't have to be h2 btw)
     Then if we want to link it later, 
         <a href="#test">Click to go to test.</a>
+
