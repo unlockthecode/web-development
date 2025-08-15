@@ -132,7 +132,14 @@ Chapter 5: Links
 
         <a href="google.com" target="_blank">Google</a>
 
-Chapter 6: 
+Chapter 6: Images
+> <img src="" alt="">
+> If we use this with React or something similar in the future, we might need to put /> at the end.
+> To resize it, we can use width and height tag. If we just use one of those tags, html will resize it according to the images' aspect ratio.
+    - But it is still recommended to put both of those exactly because of "Cumulative Layout Shift"
+> For performance in your webpage, you SHOULD use the " loading="lazy" " tag for any image below the fold.
+
+
 
 
 
