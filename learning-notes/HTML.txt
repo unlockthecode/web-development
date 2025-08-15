@@ -149,17 +149,18 @@ Chapter 6: Images & Figures
         <figcaption>What this code does</figcaption>
         <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
     </figure>
-
-
-> Extra Tricks
+>>> Extra Tricks & Resources
     >> if you do [tag]*[num] (i.e. br*10), it will result on making <br> 10x
     >> if you copy an opening tag and paste it at the end, it will automatically make it a closing tag.
-    >> if you want to put something between new tags (i.e something inside a list), you enclose it in opening and closing tag, highlight the thing, and then press tab, it will reformat it for you.
+    >> if you want to put something between new tags (i.e something inside a list), you enclose it in opening and closing tag, highlight the thing, and then press tab, it will insert tabs for you.
+    >> https://placehold.co
+    >> https://unsplash.com
+    >> https://www.pexels.com
+    >> https://pixabay.com
+    >> https://canva.com 
+    >> https://tinypng.com
 
-
-
-
-
+Chapter 7: Semantic Tags
 
 
 
