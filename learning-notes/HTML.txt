@@ -132,15 +132,29 @@ Chapter 5: Links
 
         <a href="google.com" target="_blank">Google</a>
 
-Chapter 6: Images
-> <img src="" alt="">
+Chapter 6: Images & Figures
+> <img src="" alt=""/>
 > If we use this with React or something similar in the future, we might need to put /> at the end.
-> To resize it, we can use width and height tag. If we just use one of those tags, html will resize it according to the images' aspect ratio.
+> To resize it, we can use width and height attribute. If we just use one of those attributes, html will resize it according to the images' aspect ratio.
     - But it is still recommended to put both of those exactly because of "Cumulative Layout Shift"
 > For performance in your webpage, you SHOULD use the " loading="lazy" " tag for any image below the fold.
+> We can enclose an <img> element inside a <figure> element to give it a <figcaption> inside.
+    <figure>
+        <img src="..." />
+        <figcaption>Sample caption</figcaption>
+    </figure>
+    >> This will make the image and caption indented.
+> If we want to show a html code in the webpage, the way to do so would be doing the ff.
+    <figure>
+        <figcaption>What this code does</figcaption>
+        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+    </figure>
 
 
-
+> Extra Tricks
+    >> if you do [tag]*[num] (i.e. br*10), it will result on making <br> 10x
+    >> if you copy an opening tag and paste it at the end, it will automatically make it a closing tag.
+    >> if you want to put something between new tags (i.e something inside a list), you enclose it in opening and closing tag, highlight the thing, and then press tab, it will reformat it for you.
 
 
 
