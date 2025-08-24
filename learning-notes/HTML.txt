@@ -179,23 +179,29 @@ Chapter 7: Semantic Tags
 > <header></header>
         - There can be multiple header elements in a page
         - i.e. social media post site or something 
-
 > <footer></footer>
         - There can be multiple footer elements as well 
         - i.e. footer of a blog post or something
-
 > <article></article>
         - clear topic, more generic 
-
 > <section></section>
         - little section in a topic 
-
-> <h1 id="" class="">
+> <tag id="" class="">
         - id for specific
         - class if you want to generalize
-
 > <body> <main> </main> </body>
-
+> <aside> </aside>
+        - can be used for a sidebar 
+> <details></details>
+> <summary></summary>
+> <mark></mark>
+        - highlights enclosed text
+> <time datetime="08:00">8 AM</time>
+> <div></div>
+> <span></span>
+        - both are generic elements 
+        - div is block-level, span is inline-level
+        - used for grouping and styling purposes
 
 
 
