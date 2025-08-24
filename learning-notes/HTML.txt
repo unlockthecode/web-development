@@ -11,7 +11,8 @@ ctrl + d                    (select multiple lines with the same elements in ord
 shift + alt + f             (fix indentations and formatting)
 Shift + Alt + I             (this puts a cursor at the end of each highlighted line)
     - Home                  (after above, press Home to move all cursors to the start of the lines)
-CTRL + H                    (find and replace tool)
+ctrl + h                    (find and replace tool)
+ctrl + shift + i            (open copilot chat)
 
 Misc:
 > Your project doesn't always have to have an index.html but Web servers automatically serve index.html when someone visits your domain root or directory without specifying a file.
@@ -189,10 +190,11 @@ Chapter 7: Semantic Tags
 > <section></section>
         - little section in a topic 
 
+> <h1 id="" class="">
+        - id for specific
+        - class if you want to generalize
 
-
-
-
+> <body> <main> </main> </body>
 
 
 
