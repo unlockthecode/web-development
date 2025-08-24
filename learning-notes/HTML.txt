@@ -183,10 +183,11 @@ Chapter 7: Semantic Tags
         - There can be multiple footer elements as well 
         - i.e. footer of a blog post or something
 
-> <section></section>
 > <article></article>
+        - clear topic, more generic 
 
-
+> <section></section>
+        - little section in a topic 
 
 
 
