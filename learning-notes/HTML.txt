@@ -11,6 +11,7 @@ ctrl + d                    (select multiple lines with the same elements in ord
 shift + alt + f             (fix indentations and formatting)
 Shift + Alt + I             (this puts a cursor at the end of each highlighted line)
     - Home                  (after above, press Home to move all cursors to the start of the lines)
+CTRL + H                    (find and replace tool)
 
 Misc:
 > Your project doesn't always have to have an index.html but Web servers automatically serve index.html when someone visits your domain root or directory without specifying a file.
@@ -161,10 +162,29 @@ Chapter 6: Images & Figures
     >> https://tinypng.com
 
 Chapter 7: Semantic Tags
+> Ideal page layout is h1 to h3 only...
+        - <h2 id="table-of-songs">Table of Songs</h2>
 
+> <nav></nav> elements 
+        - grouping of links that help us navigate the pages
+        - nav should always be labeled
+        >> <nav aria-label="Table of Songs">
+        or 
+        >> <nav aria-labelledby="table-of-songs">
 
+> <hr>  - topic change 
+        - we might replace these with lines with css later on
 
+> <header></header>
+        - There can be multiple header elements in a page
+        - i.e. social media post site or something 
 
+> <footer></footer>
+        - There can be multiple footer elements as well 
+        - i.e. footer of a blog post or something
+
+> <section></section>
+> <article></article>
 
 
 
