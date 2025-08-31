@@ -2,18 +2,6 @@
 
 https://youtu.be/mJgBOIoGihA - HTML Full Course for Beginners | Complete All-in-One Tutorial | 4 Hours
 
-Shortcuts:
-element + tab               (i.e html+tab = <html></html>)
-alt + l + alt + o           (opens live server)
-alt + z                     (text wrap)
-shift + alt + down arrow    (duplicate a line)
-ctrl + d                    (select multiple lines with the same elements in order)
-shift + alt + f             (fix indentations and formatting)
-Shift + Alt + I             (this puts a cursor at the end of each highlighted line)
-    - Home                  (after above, press Home to move all cursors to the start of the lines)
-ctrl + h                    (find and replace tool)
-ctrl + shift + i            (open copilot chat)
-
 Misc:
 > Your project doesn't always have to have an index.html but Web servers automatically serve index.html when someone visits your domain root or directory without specifying a file.
 
@@ -203,15 +191,29 @@ Chapter 7: Semantic Tags
         - div is block-level, span is inline-level
         - used for grouping and styling purposes
 
-
-
-
-
+Chapter 8: Tables 
+> <table>   </table>    - Table element 
+> <tr>      </tr>       - Stands for table row (inside table element)
+> <td>      </td>       - Stands for table data (inside table row)
+> <th>      </th>       - Stands for table header (inside table row)
+> <time datetime="08:00">8 AM</time>
+> We can add .css to style the table later on
+> Tables expands differently from other elements
+    - It expands based on the content inside the cells
+    - We can use width and height attributes but it is not recommended
+> <td colspan="2">Something</td> - makes the cell span across 2 columns
+> <td rowspan="2">Something</td> - makes the cell span across 2 rows
+> Semantics: 
+    <caption>Table Caption</caption> under <table> element to give context to the table
+    <thead> </thead> for table header section
+    <tbody> </tbody> for table body section
+    <tfoot> </tfoot> for table footer section
+    <th scope="col">Header</th> for column headers
+    <th scope="row">Header</th> for row headers
+    <th id="unique-id">Header</th> for unique identifiers
 
 My Goals For the current Project:
-                    > Find a way to make links open in another tab when clicked by someone.
-                    > Find out how to make css for different pages in one project.
-                    > Find out terms for parts of a webpage (i.e. the top bar where there's usually home/back/etc in a page).
+            > Find out terms for parts of a webpage (i.e. the top bar where there's usually home/back/etc in a page).
 
 Problems I tackled:
 > Find out the proper way to change abbr for romanization of the korean lyrics
@@ -255,3 +257,22 @@ Problems I tackled:
     .verse p:last-child {
         margin-bottom: 1em;
     }
+
+> Find a way to make links open in another tab when clicked by someone. 
+    Very easy I just had to put target="_blank" in the <a> tag.
+
+> Find out how to make css for different pages in one project.
+    Just change the stylesheet link in the meta element
+
+Shortcuts:
+element + tab                       (i.e html+tab = <html></html>)
+alt + l + alt + o                   (opens live server)
+alt + z                             (text wrap)
+shift + alt + down arrow            (duplicate a line)
+ctrl + d                            (select multiple lines with the same elements in order)
+shift + alt + f                     (fix indentations and formatting)
+Shift + Alt + I                     (this puts a cursor at the end of each highlighted line)
+    - Home                          (after above, press Home to move all cursors to the start of the lines)
+ctrl + h                            (find and replace tool)
+ctrl + shift + i                    (open copilot chat)
+select rows + shift + alt + up/down (move/copy selected rows up/down)
