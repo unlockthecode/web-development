@@ -10,6 +10,7 @@ Chapter 1:
 > Live Server extension will be useful to view your project
     - After installing, right click inside any of your html file and you can open it in your browser immediately and host it locally in your pc
     - Bottom right you can see a stop icon in a port if you are live OR "Start Live" if it's off.
+> HTML CSS Support extension is also useful for css
 > Only put 1 h1 element in a page
 > Inside the head we put the title and meta elements.
     - In the tutorial he puts some styling (css) under head as well.
@@ -211,6 +212,14 @@ Chapter 8: Tables
     <th scope="col">Header</th> for column headers
     <th scope="row">Header</th> for row headers
     <th id="unique-id">Header</th> for unique identifiers
+
+Chapter 9: Forms & Inputs
+
+<form action="">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <input type="submit" value="Submit">
+</form>
 
 My Goals For the current Project:
             > Find out terms for parts of a webpage (i.e. the top bar where there's usually home/back/etc in a page).
