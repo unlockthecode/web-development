@@ -253,6 +253,21 @@ Form methods:
     <input type="password" id="password" name="password" minlength="8">
     <input type="submit" value="Submit">
 </form>
+
+Input types:
+> text, email, tel, number, date, password, checkbox, radio, submit, reset, file, hidden, button, color, range, search, time, url, week, month
+> Important attributes for input elements:
+    - type, id, name, value, placeholder, required, pattern, minlength, maxlength, min, max, step, autocomplete
+
+Important Notes:
+> You can put them each in a block of code so they're spaced apart like <p></p> or <div></div>
+> label element is used to define labels for input elements
+> for attribute in label should match the id of the corresponding input element
+> input elements are self-closing (no separate closing tag)
+> input elements should always be inside a form element
+> form element wraps around input elements and other related elements
+
+
 > action attribute is where the form data is sent when submitted
 > method attribute specifies how to send the form data (GET or POST)
 > label element is used to define labels for input elements
