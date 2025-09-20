@@ -215,15 +215,42 @@ Chapter 8: Tables
 
 Chapter 9: Forms & Inputs
 
-<form action="">
+Form methods: 
+> 1. GET - appends form data to the URL in name/value pairs (visible in the URL)
+> 2. POST - sends form data as part of the HTTP request body (not visible in the URL)
+> 3. PUT - replaces all current representations of the target resource with the uploaded content
+> 4. DELETE - removes all current representations of the target resource given by a URL
+> 5. PATCH - applies partial modifications to a resource
+> 6. OPTIONS - describes the communication options for the target resource
+> 7. HEAD - asks for a response identical to a GET request, but without the response body
+> Most common are GET and POST
+> Example form with various input types and attributes:
+<form action="" method="post">   
+        <!-- action attribute is where the form data is sent when submitted -->
+        <!-- method attribute specifies how to send the form data (GET or POST) -->
+        <!-- form action here states where the form data is sent upon submission, method is how the data is sent (GET or POST) -->
     <label for="name">Name:</label>
     <input type="text" id="name" name="name">
     <input type="submit" value="Submit">
-</form>
 
-<form action="submit_form.php" method="post">
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
+    <input type="submit" value="Submit">
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+    <input type="submit" value="Submit">
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="1" max="120">
+    <input type="submit" value="Submit">
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+    <input type="submit" value="Submit">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="8">
     <input type="submit" value="Submit">
 </form>
 > action attribute is where the form data is sent when submitted
