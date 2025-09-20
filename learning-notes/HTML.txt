@@ -221,6 +221,16 @@ Chapter 9: Forms & Inputs
     <input type="submit" value="Submit">
 </form>
 
+<form action="submit_form.php" method="post">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <input type="submit" value="Submit">
+</form>
+> action attribute is where the form data is sent when submitted
+> method attribute specifies how to send the form data (GET or POST)
+> label element is used to define labels for input elements
+> for attribute in label should match the id of the corresponding input element
+
 My Goals For the current Project:
             > Find out terms for parts of a webpage (i.e. the top bar where there's usually home/back/etc in a page).
 
@@ -285,3 +295,4 @@ Shift + Alt + I                     (this puts a cursor at the end of each highl
 ctrl + h                            (find and replace tool)
 ctrl + shift + i                    (open copilot chat)
 select rows + shift + alt + up/down (move/copy selected rows up/down)
+"input:text" + tab                  (creates <input type="text" />) 
