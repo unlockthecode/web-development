@@ -1,4 +1,184 @@
-html{
-    background-color: black;
-    color: white;
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdf6e3;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Container: responsive, centered, and limited width */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff5e1;
+  border: 2px solid #ff9f1c;
+  border-radius: 8px;
+}
+
+/* Header */
+header {
+  background-color: #ff9f1c;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 6px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+/* Navigation */
+nav#navbar {
+  background-color: #ffbf69;
+  padding: 10px 0;
+  margin: 20px 0;
+  border-radius: 6px;
+  text-align: center;
+}
+
+nav#navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+
+nav#navbar li a {
+  color: #cbf3f0;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background 0.3s ease;
+}
+
+nav#navbar li a:hover {
+  background-color: #ff9f1c;
+  border-radius: 4px;
+}
+
+/* Image */
+main img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 3px solid #ff9f1c;
+}
+
+/* Section headers */
+section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #d62828;
+}
+
+section h3 {
+  font-size: 1.5em;
+  margin-top: 20px;
+  color: #e76f51;
+}
+
+/* About + Trivia */
+#about p {
+  margin: 10px 0 20px;
+}
+
+#trivia {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Menu Table */
+#menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#menu-table caption h2 {
+  margin-bottom: 10px;
+}
+
+#menu-table th,
+#menu-table td {
+  border: 1px solid #ff9f1c;
+  padding: 12px;
+  text-align: left;
+}
+
+#menu-table th {
+  background-color: #f77f00;
+  color: white;
+}
+
+#menu-table tr:nth-child(even) {
+  background-color: #ffe5b4;
+}
+
+#menu-table tr:hover {
+  background-color: #ffebb3;
+}
+
+/* Store Hours */
+#hours-list {
+  margin: 10px 0 20px 20px;
+  list-style: disc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #ff9f1c;
+  color: white;
+  padding: 20px 10px;
+  margin-top: 40px;
+  border-radius: 6px;
+}
+
+footer a {
+  color: #cbf3f0;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  nav#navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  section h2 {
+    font-size: 1.5em;
+  }
+
+  #menu-table th,
+  #menu-table td {
+    font-size: 0.9em;
+  }
 }

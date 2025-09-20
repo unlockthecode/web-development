@@ -4,118 +4,130 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Little Taco Shop</title>
     <link rel="stylesheet" href="../little-taco-shop/index.css">
     <link rel="icon" type="image/png" href="../resources/home.png">
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to the Little Taco Shop</h1>
-    </header>
+    <div class="container">
+        <header id="header">
+            <h1>Welcome to the Little Taco Shop</h1>
+        </header>
 
-    <main>
-        <nav id="navbar">
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#hours">Store Hours</a></li>
-                <li><a href="#contacts">Contacts</a></li>
-            </ul>
-        </nav>
+        <main>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#hours">Store Hours</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
 
-        <img src="../resources/pictures/pexels-pipe-carbonell-1291550-2465825.jpg" alt="Little Taco Shop" width="600" height="400">
-    </main>
+            <img src="../resources/pictures/pexels-pipe-carbonell-1291550-2465825.jpg" alt="Little Taco Shop"
+                width="600" height="400">
+        </main>
 
-    <hr>
-    <section id="about">
-        <h2>About Us - The Little Taco Shop</h2>
-        <p>Welcome to the Little Taco Shop, where we serve the most delicious and authentic tacos in town! Our mission is to provide a cozy atmosphere where you can enjoy fresh, flavorful tacos made with love and the finest ingredients. Whether you're a fan of classic flavors or adventurous combinations, we have something for everyone. Come visit us and experience the taste of Mexico right in your neighborhood!
-        </p>
         <hr>
-        <h3>Taco Trivias</h3>
-        <details>
-            <summary>Expand for Taco Trivias</summary>
-            <ul id="trivia">
-                <li>The word "taco" means "light lunch" in Spanish.</li>
-                <li>Tacos are believed to have originated in Mexico in the 18th century.</li>
-                <li>The first taco truck in the United States was established in Los Angeles in the early 1900s.</li>
-                <li>Tacos can be made with a variety of fillings, including beef, chicken, pork, fish, and vegetables.</li>
-                <li>National Taco Day is celebrated on October 4th each year in the United States.</li>
+        <section id="about">
+            <h2>About Us - The Little Taco Shop</h2>
+            <p>Welcome to the Little Taco Shop, where we serve the most delicious and authentic tacos in town! Our
+                mission is to provide a cozy atmosphere where you can enjoy fresh, flavorful tacos made with love and
+                the finest ingredients. Whether you're a fan of classic flavors or adventurous combinations, we have
+                something for everyone. Come visit us and experience the taste of Mexico right in your neighborhood!
+            </p>
+            <hr>
+            <h3>Taco Trivias</h3>
+            <details>
+                <summary>Expand for Taco Trivias</summary>
+                <ul id="trivia">
+                    <li>The word "taco" means "light lunch" in Spanish.</li>
+                    <li>Tacos are believed to have originated in Mexico in the 18th century.</li>
+                    <li>The first taco truck in the United States was established in Los Angeles in the early 1900s.
+                    </li>
+                    <li>Tacos can be made with a variety of fillings, including beef, chicken, pork, fish, and
+                        vegetables.</li>
+                    <li>National Taco Day is celebrated on October 4th each year in the United States.</li>
+                </ul>
+            </details>
+        </section>
+
+        <hr>
+        <section id="menu">
+            <table id="menu-table">
+                <caption>
+                    <h2>Our Tacos</h2>
+                </caption>
+                <tr>
+                    <th>Tacos</th>
+                    <th>Price</th>
+                    <th>QTY</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">Classic Beef</td>
+                    <td>$3.00</td>
+                    <td>1</td>
+                    <td>Seasoned ground beef, lettuce, cheese, and salsa in a soft corn tortilla.</td>
+                </tr>
+                <tr>
+                    <td>$5.50</td>
+                    <td>2</td>
+                    <td>Two classic beef tacos served with a side of rice and beans.</td>
+                </tr>
+                <tr>
+                    <td>$8.00</td>
+                    <td>3</td>
+                    <td>Three classic beef tacos served with a side of rice, beans, and a drink.</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Classic Chicken</td>
+                    <td>$2.50</td>
+                    <td>1</td>
+                    <td>Grilled chicken, lettuce, cheese, and salsa in a soft corn tortilla.</td>
+                </tr>
+                <tr>
+                    <td>$6.50</td>
+                    <td>2</td>
+                    <td>Two classic chicken tacos served with a side of rice and beans.</td>
+                </tr>
+                <tr>
+                    <td>$7.50</td>
+                    <td>3</td>
+                    <td>Three classic chicken tacos served with a side of rice, beans, and a drink.</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Chips & Salsa $3.00</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="hours">
+            <h2>Store Hours</h2>
+            <ul id="hours-list">
+                <li>Monday: 11:00 AM - 9:00 PM</li>
+                <li>Tuesday: 11:00 AM - 9:00 PM</li>
+                <li>Wednesday: 11:00 AM - 9:00 PM</li>
+                <li>Thursday: 11:00 AM - 9:00 PM</li>
+                <li>Friday: 11:00 AM - 10:00 PM</li>
+                <li>Saturday: 12:00 PM - 10:00 PM</li>
+                <li>Sunday: Closed</li>
             </ul>
-        </details>
-    </section>
+        </section>
 
-    <hr>
-    <section id="menu">
-        <table id="menu-table">
-            <caption><h2>Our Tacos</h2></caption>
-            <tr>
-                <th>Tacos</th>
-                <th>Price</th>
-                <th>QTY</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td rowspan="3">Classic Beef</td>
-                <td>$3.00</td>
-                <td>1</td>
-                <td>Seasoned ground beef, lettuce, cheese, and salsa in a soft corn tortilla.</td>
-            </tr>
-            <tr>
-                <td>$5.50</td>
-                <td>2</td>
-                <td>Two classic beef tacos served with a side of rice and beans.</td>
-            </tr>
-            <tr>
-                <td>$8.00</td>
-                <td>3</td>
-                <td>Three classic beef tacos served with a side of rice, beans, and a drink.</td>
-            </tr>
-            <tr>
-                <td rowspan="3">Classic Chicken</td>
-                <td>$2.50</td>
-                <td>1</td>
-                <td>Grilled chicken, lettuce, cheese, and salsa in a soft corn tortilla.</td>
-            </tr>
-            <tr>
-                <td>$6.50</td>
-                <td>2</td>
-                <td>Two classic chicken tacos served with a side of rice and beans.</td>
-            </tr>
-            <tr>
-                <td>$7.50</td>
-                <td>3</td>
-                <td>Three classic chicken tacos served with a side of rice, beans, and a drink.</td>
-            </tr>
-            <tr>
-                <td colspan="3">Chips & Salsa $3.00</td>
-            </tr>
-        </table>
-    </section>
+        <hr>
 
-    <hr>
-    
-    <section id="hours">
-        <h2>Store Hours</h2>
-        <ul id="hours-list">
-            <li>Monday: 11:00 AM - 9:00 PM</li>
-            <li>Tuesday: 11:00 AM - 9:00 PM</li>
-            <li>Wednesday: 11:00 AM - 9:00 PM</li>
-            <li>Thursday: 11:00 AM - 9:00 PM</li>
-            <li>Friday: 11:00 AM - 10:00 PM</li>
-            <li>Saturday: 12:00 PM - 10:00 PM</li>
-            <li>Sunday: Closed</li>
-        </ul>
-    </section>
-
-    <hr>
-
-    <footer>
-        <p><a href="#navbar">Back to Top</a></p>
-        <p>&copy; 2025 Little Taco Shop - UnlockTheCode</p>
-        <p>Images from <a href="https://www.pexels.com" target="_blank" rel="noopener noreferrer">Pexels - Pipe Carbonell</a></p>
-    </footer>
+        <footer>
+            <p><a href="#navbar">Back to Top</a></p>
+            <p>&copy; 2025 Little Taco Shop - UnlockTheCode</p>
+            <p>Images from <a href="https://www.pexels.com" target="_blank" rel="noopener noreferrer">Pexels - Pipe
+                    Carbonell</a></p>
+        </footer>
+    </div>
 </body>
+
 </html>

@@ -169,6 +169,7 @@ Extra Resources
 - https://pixabay.com
 - https://canva.com
 - https://tinypng.com
+- https://coolors.co/
 
 ──────────────────────────────
 Common Problems & Solutions
