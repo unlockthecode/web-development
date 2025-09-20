@@ -10,5 +10,51 @@
 </head>
 
 <body>
-    
+    <div class="container">
+        <header id="header">
+            <h1>Welcome to the Little Taco Shop</h1>
+        </header>
+
+        <main>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="../little-taco-shop/index.html">Home</a></li>
+                    <li><a href="../little-taco-shop/index.html#about">About Us</a></li>
+                    <li><a href="../little-taco-shop/index.html#menu">Menu</a></li>
+                    <li><a href="../little-taco-shop/index.html#hours">Store Hours</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                </ul>
+            </nav>
+
+            <hr>
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>If you have any questions, feedback, or would like to make a reservation, please feel free to reach out to us using the contact information below:</p>
+                <ul>
+                    <li><strong>Phone:</strong> (123) 456-7890</li>
+                    <li><strong>Email:</strong> <a href="mailto:info@littletacoshop.com">info@littletacoshop.com</a></li>
+                    <li><strong>Address:</strong> 123 Taco Lane, Flavor Town, TX 75001</li>
+                </ul>
+                <p>If you prefer to contact us now directly, you can use the following form:</p>
+            </section>
+            <hr>
+            <form action="mailto:info@littletacoshop.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                <br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </main>
+
+        <footer id="footer">
+            <p>&copy; 2025 Little Taco Shop. UnlockTheCode.</p>
+        </footer>
+    </div>
 </body>
