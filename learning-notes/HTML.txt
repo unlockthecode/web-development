@@ -83,6 +83,14 @@ Images & Figures
 <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code> : Show HTML code
 
 ──────────────────────────────
+Collapsible Content
+──────────────────────────────
+<details>
+    <summary>Click to expand</summary>
+    <p>Hidden content</p>
+</details>
+
+──────────────────────────────
 Tables
 ──────────────────────────────
 <table>
