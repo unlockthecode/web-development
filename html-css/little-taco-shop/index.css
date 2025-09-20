@@ -50,12 +50,13 @@ nav#navbar ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   padding: 0;
+  font-size: 1.3em;
 }
 
 nav#navbar li a {
-  color: #cbf3f0;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   padding: 8px 12px;
@@ -93,6 +94,7 @@ section h3 {
 /* About + Trivia */
 #about p {
   margin: 10px 0 20px;
+  text-indent: 50px;
 }
 
 #trivia {
