@@ -1,340 +1,179 @@
 [ Learning Hypertext Markup Language ]
 
-https://youtu.be/mJgBOIoGihA - HTML Full Course for Beginners | Complete All-in-One Tutorial | 4 Hours
+Reference Tutorial:
+- https://youtu.be/mJgBOIoGihA - HTML Full Course for Beginners
 
-Misc:
-> Your project doesn't always have to have an index.html but Web servers automatically serve index.html when someone visits your domain root or directory without specifying a file.
+──────────────────────────────
+General Notes
+──────────────────────────────
+- index.html is usually served by web servers at the root, but not strictly required.
+- Use the W3C Markup Validation Service (validator.w3.org) to check your HTML.
+- Always start with <!DOCTYPE html> and add lang attribute to <html>.
+- <meta charset="UTF-8"> should be inside <head>.
 
-Chapter 1:
-> vscode-icons, and github theme extensions are optional but looks good
-> Live Server extension will be useful to view your project
-    - After installing, right click inside any of your html file and you can open it in your browser immediately and host it locally in your pc
-    - Bottom right you can see a stop icon in a port if you are live OR "Start Live" if it's off.
-> HTML CSS Support extension is also useful for css
-> Only put 1 h1 element in a page
-> Inside the head we put the title and meta elements.
-    - In the tutorial he puts some styling (css) under head as well.
-> W3C Markup Validation Service
-    - It makes the standards for the web overall, and we can use it to check for any mistakes
-    - validator.w3.org
-    - Important to use as reference.
-    - I needed to put lang attribute to the html start tag.
-    - I also needed to put !DOCTYPE html before the actual html element.
-    - Finally, I put <meta charset="UTF-8"> inside the head element.
-> Elements vs Attributes
-    - Attributes are properties of elements
+──────────────────────────────
+VS Code Extensions
+──────────────────────────────
+- vscode-icons, GitHub theme (optional, for aesthetics)
+- Live Server (for instant browser preview)
+- HTML CSS Support (for CSS help)
 
-Chapter 2: Head Element
-> Anything inside the Head Element is not seen in the webpage itself. It is something that's behind the scenes
+──────────────────────────────
+HTML Structure Overview
+──────────────────────────────
+<html lang="en">
+    <head>
+        <!-- Metadata, title, links, scripts, styles -->
+    </head>
+    <body>
+        <!-- Visible content -->
+    </body>
+</html>
 
-> Attributes of the meta element so far
-    - charset, name, content
-> To my understanding we break something like 
-    <meta name="author" content="UnlockTheCode"> 
-    name = type, content = inside that type
-> Inside the head element we can put an icon via
-    <link rel="icon" href="../resources/home.png" type="image/x-icon">
-    - link element, rel attribute (for reference), href for what you want inside, type for itself.
-    - flaticon.com has a lot of free icons as long as you put proper credits
-    Example: (inside the body element)
-    <footer>
-        Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a>
-    </footer>
-> Inside the head element, he moved his previous styling into a proper separate css sheet.
-    <link rel="stylesheet" href="main.css">
-    - link element, rel attribute (for preset types), href for where your style sheet is located.
+──────────────────────────────
+Key Elements & Their Purposes
+──────────────────────────────
+<head>      : Metadata, links, scripts, styles (not visible)
+<header>    : Top section of page/section (logo, nav, etc.)
+<footer>    : Bottom section (contact, copyright, nav)
+<nav>       : Navigation links (use aria-label for accessibility)
+<main>      : Main content of the page
+<aside>     : Sidebar or related content
+<section>   : Thematic grouping of content
+<article>   : Independent, self-contained content
+<div>       : Generic block-level container
+<span>      : Generic inline container
 
+──────────────────────────────
+Text & Semantics
+──────────────────────────────
+- Headings: <h1> (only one per page), <h2>, <h3>, ...
+- Paragraphs: <p> (use one per logical block of text)
+- Horizontal rule: <hr> (topic change)
+- Line break: <br> (use sparingly)
+- Block-level elements: <div>, <p>, <h1>-<h6>, <ul>, <ol>, <li>, <section>, <article>, <header>, <footer>, <form>, <table>, <blockquote>
+- Inline elements: <span>, <a>, <strong>, <em>, <img>, <input>, <button>, <code>, <small>, <sub>, <sup>
+- Semantic tags: <em>, <strong>, <abbr>, <address>, <mark>, <time>, <code>, <!-- Comment -->
 
-Difference of <head>, <header>, <footer>
+──────────────────────────────
+Lists
+──────────────────────────────
+<ol>      : Ordered list
+<ul>      : Unordered list
+<li>      : List item
+<dl>      : Description list
+<dt>      : Term in description list
+<dd>      : Description in description list
 
-<head>
-Purpose: Holds metadata about the page (not visible content).
-Location: Always inside <html> but before <body>.
-Contains: <title>, <meta>, <link> (CSS), <style>, <script> (sometimes), etc.
+──────────────────────────────
+Links
+──────────────────────────────
+<a href="url">Text</a>           : Basic link
+<a href="#id">Jump to section</a>: Internal link
+<a href="url" target="_blank">   : Open in new tab
 
-<header>
-Purpose: A sectioning element for content inside the body — usually the top part of the page or a section.
-Location: Inside <body>.
-Contains: Visible things like logo, navigation menu, titles, etc.
-*(unsure but also the <nav> is under this)
+──────────────────────────────
+Images & Figures
+──────────────────────────────
+<img src="..." alt="..." width="" height="" loading="lazy" />
+<figure>
+    <img src="..." />
+    <figcaption>Caption</figcaption>
+</figure>
+<code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code> : Show HTML code
 
-<footer>
-Works like <header> but for the bottom section — contact info, copyright, navigation, etc.
+──────────────────────────────
+Tables
+──────────────────────────────
+<table>
+    <caption>Table Caption</caption>
+    <thead>
+        <tr><th scope="col">Header</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>Data</td></tr>
+    </tbody>
+    <tfoot>
+        <tr><td>Footer</td></tr>
+    </tfoot>
+</table>
+<td colspan="2">, <td rowspan="2"> : Span columns/rows
 
-Chapter 3: Basics of Text Contents
-> Webpages are alike newspapers with headings and paragraphs of texts
-> Headings have hierarchy, h1 -> h2 -> ... 
-> If you can tell from this point, there are spaces between your contents but we can fix it later.
-> Use <hr> (horizontal rule) element to break headings apart and style later.
-> HTML doesn't honor spaces, this is called whitespace collapsing.
-    - Something we can do is use a line break "<br>"
-> Block vs Inline level elements 
-    - Block-level elements create a "block" that takes up the full available width and starts on a new line. They stack vertically and can contain other block-level or inline elements.
-    - Inline elements flow within the text content and only take up as much width as necessary. They don't start on new lines.
-
-Common block-level elements: 
-<div>, <p>, <h1>-<h6>, <ul>, <ol>, <li>, <section>, <article>, <header>, <footer>, <form>, <table>, <blockquote>
-
-Common inline elements:
-<span>, <a>, <strong>, <em>, <img>, <input>, <button>, <code>, <small>, <sub>, <sup>
-
-> Semantics / HTML entities (Do note that the listed behaviors are their "default" but it can be changed in css.)
-    <em> - </em>            - Makes text italicized but also serves as a marker for web readers to emphasize that text.
-    <strong> - </strong>    - It makes it a little bit bigger, same purpose as above but bigger emphasis.
-    &nbsp;                  - Makes a tab/indent 
-    &lt;                    - "<" symbol
-    &gt;                    - ">" symbol
-    &copy;                  - Copyright Symbol 
-    <abbr> - </abbr>        - abbreviation
-    <address> - </address>  - Location/place for any webreader to recognize a text is referring to a location.
-    <!-- Comment -->        - Comments in the HTML/source code
-> Some usage shown:
-    <abbr title="Mozilla Developer Network">MDN</abbr>  - puts dots below and if hovered over we see a tooltip with the meaning
-
-> Lessons learned:
-    Putting an entire verse in a single <p> with <br> tags is not ideal from a semantic HTML standpoint, even though it works visually.
-    NEVER put alot of text in a single <p> </p> ...
-    IDEALLY put <p> </p> for each line...
-    <br> is meant for occasional line breaks, not structuring an entire block. 
-
-Chapter 4: List Types
-    <ol> </ol>              - ordered lists
-    <ul> </ul>              - unordered list
-    <li> </li>              - list item (inside the previous two list types)
-    
-    <dl> Something </ul>    - description list header
-    <dd> Detail </dd>    - detail for description list 
-
-Chapter 5: Links
-> We link the web together
-        <link> </link>                  - link tag but not what we use to link page to each other
-        <link rel="" href="">
-        <a href="link">Something</a>    - anchor tag + href link 
-> Absolute Reference vs Relative Reference
-    > If we are linking (site or other file types) from 
-        Other servers than your own = Absolute Reference 
-        Your own servers            = Relative Reference 
-> How about something like a table of contents for something in the same webpage/html file?
-    We first define a custom "item" or id in the current webpage 
-        <h2 id="test">This is the test.</h2> (doesn't have to be h2 btw)
-    Then if we want to link it later, 
-        <a href="#test">Click to go to test.</a>
-    If you want the link to open to another tab do the tag target="_blank" in <a> element
-
-        <a href="google.com" target="_blank">Google</a>
-
-Chapter 6: Images & Figures
-> <img src="" alt=""/>
-> If we use this with React or something similar in the future, we might need to put /> at the end.
-> To resize it, we can use width and height attribute. If we just use one of those attributes, html will resize it according to the images' aspect ratio.
-    - But it is still recommended to put both of those exactly because of "Cumulative Layout Shift"
-> For performance in your webpage, you SHOULD use the " loading="lazy" " tag for any image below the fold.
-> We can enclose an <img> element inside a <figure> element to give it a <figcaption> inside.
-    <figure>
-        <img src="..." />
-        <figcaption>Sample caption</figcaption>
-    </figure>
-    >> This will make the image and caption indented.
-> If we want to show a html code in the webpage, the way to do so would be doing the ff.
-    <figure>
-        <figcaption>What this code does</figcaption>
-        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
-    </figure>
->>> Extra Tricks & Resources
-    >> if you do [tag]*[num] (i.e. br*10), it will result on making <br> 10x
-    >> if you copy an opening tag and paste it at the end, it will automatically make it a closing tag.
-    >> if you want to put something between new tags (i.e something inside a list), you enclose it in opening and closing tag, highlight the thing, and then press tab, it will insert tabs for you.
-    >> https://placehold.co
-    >> https://unsplash.com
-    >> https://www.pexels.com
-    >> https://pixabay.com
-    >> https://canva.com 
-    >> https://tinypng.com
-
-Chapter 7: Semantic Tags
-> Ideal page layout is h1 to h3 only...
-        - <h2 id="table-of-songs">Table of Songs</h2>
-
-> <nav></nav> elements 
-        - grouping of links that help us navigate the pages
-        - nav should always be labeled
-        >> <nav aria-label="Table of Songs">
-        or 
-        >> <nav aria-labelledby="table-of-songs">
-
-> <hr>  - topic change 
-        - we might replace these with lines with css later on
-
-> <header></header>
-        - There can be multiple header elements in a page
-        - i.e. social media post site or something 
-> <footer></footer>
-        - There can be multiple footer elements as well 
-        - i.e. footer of a blog post or something
-> <article></article>
-        - clear topic, more generic 
-> <section></section>
-        - little section in a topic 
-> <tag id="" class="">
-        - id for specific
-        - class if you want to generalize
-> <body> <main> </main> </body>
-> <aside> </aside>
-        - can be used for a sidebar 
-> <details></details>
-> <summary></summary>
-> <mark></mark>
-        - highlights enclosed text
-> <time datetime="08:00">8 AM</time>
-> <div></div>
-> <span></span>
-        - both are generic elements 
-        - div is block-level, span is inline-level
-        - used for grouping and styling purposes
-
-Chapter 8: Tables 
-> <table>   </table>    - Table element 
-> <tr>      </tr>       - Stands for table row (inside table element)
-> <td>      </td>       - Stands for table data (inside table row)
-> <th>      </th>       - Stands for table header (inside table row)
-> <time datetime="08:00">8 AM</time>
-> We can add .css to style the table later on
-> Tables expands differently from other elements
-    - It expands based on the content inside the cells
-    - We can use width and height attributes but it is not recommended
-> <td colspan="2">Something</td> - makes the cell span across 2 columns
-> <td rowspan="2">Something</td> - makes the cell span across 2 rows
-> Semantics: 
-    <caption>Table Caption</caption> under <table> element to give context to the table
-    <thead> </thead> for table header section
-    <tbody> </tbody> for table body section
-    <tfoot> </tfoot> for table footer section
-    <th scope="col">Header</th> for column headers
-    <th scope="row">Header</th> for row headers
-    <th id="unique-id">Header</th> for unique identifiers
-
-Chapter 9: Forms & Inputs
-
-Form methods: 
-> 1. GET - appends form data to the URL in name/value pairs (visible in the URL)
-> 2. POST - sends form data as part of the HTTP request body (not visible in the URL)
-> 3. PUT - replaces all current representations of the target resource with the uploaded content
-> 4. DELETE - removes all current representations of the target resource given by a URL
-> 5. PATCH - applies partial modifications to a resource
-> 6. OPTIONS - describes the communication options for the target resource
-> 7. HEAD - asks for a response identical to a GET request, but without the response body
-> Most common are GET and POST
-> Example form with various input types and attributes:
-<form action="" method="post">   
-        <!-- action attribute is where the form data is sent when submitted -->
-        <!-- method attribute specifies how to send the form data (GET or POST) -->
-        <!-- form action here states where the form data is sent upon submission, method is how the data is sent (GET or POST) -->
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name">
-    <input type="submit" value="Submit">
-
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <input type="submit" value="Submit">
-
-    <label for="phone">Phone:</label>
-    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
-    <input type="submit" value="Submit">
-
-    <label for="age">Age:</label>
-    <input type="number" id="age" name="age" min="1" max="120">
-    <input type="submit" value="Submit">
-
-    <label for="dob">Date of Birth:</label>
-    <input type="date" id="dob" name="dob">
-    <input type="submit" value="Submit">
-
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" minlength="8">
+──────────────────────────────
+Forms & Inputs
+──────────────────────────────
+<form action="" method="post">
+    <fieldset>
+        <legend>Group Name</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <!-- More inputs -->
+    </fieldset>
     <input type="submit" value="Submit">
 </form>
 
-Input types:
-> text, email, tel, number, date, password, checkbox, radio, submit, reset, file, hidden, button, color, range, search, time, url, week, month
-> Important attributes for input elements:
-    - type, id, name, value, placeholder, required, pattern, minlength, maxlength, min, max, step, autocomplete
+Input types: text, email, tel, number, date, password, checkbox, radio, submit, reset, file, hidden, button, color, range, search, time, url, week, month
+Important attributes: type, id, name, value, placeholder, required, pattern, minlength, maxlength, min, max, step, autocomplete
 
-Important Notes:
-> You can put them each in a block of code so they're spaced apart like <p></p> or <div></div>
-> label element is used to define labels for input elements
-> for attribute in label should match the id of the corresponding input element
-> input elements are self-closing (no separate closing tag)
-> input elements should always be inside a form element
-> form element wraps around input elements and other related elements
+<select id="color" name="color" multiple>
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+</select>
 
+<textarea name="message"></textarea>
 
-> action attribute is where the form data is sent when submitted
-> method attribute specifies how to send the form data (GET or POST)
-> label element is used to define labels for input elements
-> for attribute in label should match the id of the corresponding input element
+──────────────────────────────
+Styling & CSS Tips
+──────────────────────────────
+- Use classes for indentation:
+    <p class="indented">Indented text</p>
+    .indented { margin-left: 20px; }
+- Remove default <p> spacing inside a container:
+    .container p { margin: 0; padding: 0; line-height: 1.4; }
+- Add space after last <p> in a section:
+    .section p:last-child { margin-bottom: 1em; }
+- Keep link color consistent:
+    a, a:visited, a:active, a:focus { color: whitesmoke; }
 
-My Goals For the current Project:
-            > Find out terms for parts of a webpage (i.e. the top bar where there's usually home/back/etc in a page).
+──────────────────────────────
+Shortcuts (VS Code)
+──────────────────────────────
+element + tab                : Expand tag (html+tab → <html></html>)
+alt + l + alt + o            : Open Live Server
+alt + z                      : Toggle word wrap
+shift + alt + down arrow     : Duplicate line
+ctrl + d                     : Select next occurrence
+shift + alt + f              : Format document
+Shift + Alt + I              : Cursor at end of each line
+ctrl + h                     : Find and replace
+ctrl + shift + i             : Open Copilot Chat
+shift + alt + up/down        : Move/copy selected lines
+"input:text" + tab           : <input type="text" />
+shift+alt+a                  : Comment/uncomment selected lines
 
-Problems I tackled:
-> Find out the proper way to change abbr for romanization of the korean lyrics
-    - basically the same but replaced with span so instead of: 
-        <abbr title="endlessly/without end">kkeuteopsi</abbr>, changed it to 
-        <span title="endlessly/without end">kkeuteopsi</span>
+──────────────────────────────
+Extra Resources
+──────────────────────────────
+- https://placehold.co
+- https://unsplash.com
+- https://www.pexels.com
+- https://pixabay.com
+- https://canva.com
+- https://tinypng.com
 
-> Find a way to make the letters not turn to blue when clicked by someone.
-    - make links keep the same color in all states */
-        a,
-        a:visited,
-        a:active,
-        a:focus {color: whitesmoke;}
-    - I put this in the css of my project
+──────────────────────────────
+Common Problems & Solutions
+──────────────────────────────
+- Use <span title="..."> for tooltips instead of <abbr> if needed.
+- Use class for indentation instead of &nbsp;.
+- Use CSS to control spacing between <p> and sections.
+- Use target="_blank" for links to open in new tab.
+- Change stylesheet link in <head> for different pages.
 
-> Find a way to replace &nbsp; stuff for indentations or make it easier.
-    - instead of doing this: 
-            <p>&nbsp;&nbsp;This is indented.</p>
-    - we're going to do:
-            <p class="indented">This is indented.</p>
-        and then in the styling / css page we put 
-            .indented {
-                margin-left: 20px; /* or padding-left: 20px */
-                }
-    - I also learned that I should never put too much text in a <p> </p> element
-    - If a group of text is by parts, ideally we use <div> and we class them together.
-    - Alot of <br> is bad because it is meant for occasional line breaks, not structuring an entire block. 
-
-> After separating the lyrics parts by div for each part and p for each line, how do I fix the spacing between <p> elements?
-    - Go into the .css of the page 
-    - In this case we put the <p> inside a <div> so let's say the <p> elements are inside <div class="test">
-        .test p{
-            margin: 0;
-            padding: 0;
-            line-height: 1.4;
-        }
-
-> After fixing the separation of each part, I found out that after each end of a part (like verse, chorus), there isn't any space so:
-    I put this in the .css of the page
-    Let's say the <p></p> is inside a <div class="verse">
-    .verse p:last-child {
-        margin-bottom: 1em;
-    }
-
-> Find a way to make links open in another tab when clicked by someone. 
-    Very easy I just had to put target="_blank" in the <a> tag.
-
-> Find out how to make css for different pages in one project.
-    Just change the stylesheet link in the meta element
-
-Shortcuts:
-element + tab                       (i.e html+tab = <html></html>)
-alt + l + alt + o                   (opens live server)
-alt + z                             (text wrap)
-shift + alt + down arrow            (duplicate a line)
-ctrl + d                            (select multiple lines with the same elements in order)
-shift + alt + f                     (fix indentations and formatting)
-Shift + Alt + I                     (this puts a cursor at the end of each highlighted line)
-    - Home                          (after above, press Home to move all cursors to the start of the lines)
-ctrl + h                            (find and replace tool)
-ctrl + shift + i                    (open copilot chat)
-select rows + shift + alt + up/down (move/copy selected rows up/down)
-"input:text" + tab                  (creates <input type="text" />) 
+──────────────────────────────
+Webpage Parts Terminology
+──────────────────────────────
+- Top bar/navigation: <nav> (inside <header>)
+- Main content: <main>
+- Sidebar: <aside>
+- Footer: <footer>
