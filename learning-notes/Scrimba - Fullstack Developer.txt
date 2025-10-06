@@ -1,0 +1,13 @@
+Learning Fullstack Development with Scrimba
+──────────────────────────────
+
+Reference Tutorial:
+https://www.youtube.com/watch?v=LzMnsfqjzkA - Fullstack Developer Course - Learn to Code by Scrimba
+https://scrimba.com/discord - Scrimba Discord Community
+
+──────────────────────────────
+General Notes:
+- Inspect element (right-click) to see HTML structure and CSS styles of different sites as reference.
+
+──────────────────────────────
+

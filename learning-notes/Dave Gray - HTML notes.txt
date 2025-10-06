@@ -1,7 +1,8 @@
-[ Learning Hypertext Markup Language ]
+Learning Hypertext Markup Language (HTML)
+──────────────────────────────
 
 Reference Tutorial:
-- https://youtu.be/mJgBOIoGihA - HTML Full Course for Beginners
+- https://youtu.be/mJgBOIoGihA - HTML Full Course for Beginners by Dave Gray 
 
 ──────────────────────────────
 General Notes
