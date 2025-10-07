@@ -3,6 +3,7 @@ Learning Fullstack Development with Scrimba
 
 Reference Tutorial:
 https://www.youtube.com/watch?v=LzMnsfqjzkA - Fullstack Developer Course - Learn to Code by Scrimba
+https://scrimba.com/fullstack-path-c0fullstack?via=scrimbafcc - Scrimba Fullstack Developer Path
 https://scrimba.com/discord - Scrimba Discord Community
 
 ──────────────────────────────
@@ -11,3 +12,73 @@ General Notes:
 
 ──────────────────────────────
 
+⭐️ Contents ⭐️
+00:00:00 Introduction
+00:01:27 Html and CSS
+01:04:19 Intro to CSS
+02:21:01 Building a business card
+03:32:02 Space exploration
+04:17:21 Birthday website
+05:22:25 Solo project hometown homepage
+05:30:38 Build a counter app
+06:46:17 Javascript challenges part 1
+07:07:22 Git and Github basics
+07:19:59 Build a blackjack game
+10:15:19 Javascript challenges part 2
+10:41:09 Build a Chrome extension
+13:34:25 Javascript challenges part 3
+14:00:48 Command line basics
+14:46:27 Essential Git and Github skills
+15:12:55 Advanced foundations
+16:27:18 Methods and loops
+17:41:43 Functions expressions and parameter
+18:26:57 Asynchronous javascript and APIs
+19:42:29 AI engineering fundamentals
+21:19:42 Build a Node API
+22:42:51 Build a fullstack Node app
+24:52:41 Introduction to databases
+25:13:25 Writing SQL queries
+26:30:04 Static pages
+28:48:33 Data driven
+31:03:00 React state
+36:17:02 Side effects
+38:05:49 Capstone project
+40:12:26 Typescript fundamentals
+42:15:21 Typescript in React
+43:06:47 Build a Next.js app
+45:08:21 Rendering strategies and more
+
+──────────────────────────────
+
+[ HTML and CSS ]
+
+General Notes:
+- To learn more about websites or try to get an idea, open up your browser and open any website, then right-click anywhere on the page and select "Inspect" to see the HTML structure and CSS styles of the site.
+- Use semantic HTML tags like <header>, <nav>, <main>, <section>, <article>, <aside>, and <footer> to improve the structure and accessibility of your web pages.
+- Use comments in your HTML code to explain the structure and purpose of different sections. This will help you and others understand the code better in the future.
+- Nest your elements inside <div> tags to create a clear hierarchy and structure for your content.
+- Use classes to group similar elements together and apply styles to them collectively.
+- Use ids to uniquely identify specific elements on your page for styling or scripting purposes.
+- You can make nested divs as well.
+- We call these types of structures as HTML Document Tree or DOM (Document Object Model) Tree.
+- Make it work first, then make it pretty.
+
+Buttons: 
+- Use the <button> tag to create clickable buttons on your web page.
+- You can also use <a> tags styled as buttons for navigation purposes.
+- Use CSS to style your buttons, including properties like background-color, color, padding, border-radius, and hover effects.
+- Example:
+  <button type="button" class="btn-signup">Sign Up</button>
+  - When naming classes, start with the element type followed by a descriptive name (e.g., btn-signup).
+
+Input:
+- No closing tag 
+- Specify type attribute (e.g., text, password, email, number, checkbox, radio, submit).
+- Example:
+  <input type="text" placeholder="Enter your name" class="input-name">
+
+span vs div: 
+  - Use <span> for inline elements and <div> for block-level elements.
+  - <span> is typically used for styling a small chunk of text or a specific part of a document, while <div> is used to group larger sections of content.
+
+──────────────────────────────
