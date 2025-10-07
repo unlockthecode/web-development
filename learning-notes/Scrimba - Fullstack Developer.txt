@@ -82,7 +82,7 @@ span vs div:
   - <span> is typically used for styling a small chunk of text or a specific part of a document, while <div> is used to group larger sections of content.
 
 Deployment:
-- To deploy your website, you can use platforms like GitHub Pages, Netlify, or Vercel.
+- To deploy your website, you can use platforms like GitHub Pages, Netlify (this is what was used in the course), or Vercel.
 - Make sure to build your project for production by optimizing assets and minifying code.
 - Follow the deployment instructions provided by the platform you choose.
 
